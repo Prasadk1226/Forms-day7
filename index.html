@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="shortcut icon" href="./lamp.png" type="image/x-icon" />
+    <style>
+      .set{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-image: radial-gradient(circle at top right, rgb(144, 0, 255),
+          rgb(251, 0, 255),
+          rgb(119, 0, 255));
+        color: aqua;
+        border-radius: 10px;
+        margin-left: 65%;
+        width: 600px;
+        height: 640px;
+      }
+      body {
+        background-image: radial-gradient(
+          circle at top left,
+          rgb(144, 0, 255),
+          rgb(251, 0, 255),
+          rgb(119, 0, 255)
+        );
+        width: 550px;
+        font-weight: 500;
+
+        
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      #academic {
+        margin-left: 33%;
+        background-image: linear-gradient(to bottom right, black, gray, white);
+        border-width: 2px;
+        height: 35px;
+        border-radius: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+      }
+      #academic1{
+        /* margin-left: 33%; */
+        background-image: linear-gradient(to bottom right, black, gray, white);
+        border-width: 2px;
+        height: 35px;
+        width: 110px;
+        border-radius: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+      }
+      legend {
+        text-align: right;
+      }
+      #div {
+        border: 2px solid black;
+        width: 600px;
+        padding-right: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="">    
+        <fieldset class="set">
+          <legend><input type="image" src="./lamp.png" alt="forgot" width="120px"></legend>
+          <br><br>
+          <label for="ssc"
+            >SSC Percentage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label
+          >
+          <input type="text" name="ssc" id="ssc" /><br /><br />
+          <label for="inter"
+            >Intermediate    &nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;:</label
+          >
+          <select name="inter" id="inter">
+            <option value="mpc">M.P.C</option>
+            <option value="bipc">Bi.P.C</option>
+            <option value="mec">M.E.C</option>
+            <option value="cec">C.E.C</option>
+            <option value="diploma">Diploma</option>
+          </select><br><br>
+          <label for="interprct">Percentage &nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+          <input type="number" name="interprct" id="interprct" placeholder="80"><br><br>
+          <label for="Degree">Degree Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+          <input list="Degrees" name="Degree" id="Degree">
+          <datalist id="Degrees">
+            <option value="EEE">
+            <option value="ECE">
+            <option value="Mech">
+            <option value="Civil">
+            <option value="B.Com">
+            <option value="B.Sc">
+            <option value="B.A">
+            <option value="Multimedia">
+          </datalist><br><br>
+          <label for="perc">Graduation Percentage &nbsp;&nbsp; : </label>
+          <input type="number" name="perc" id="perc" placeholder="60"><br><br>
+          <label for="cert">Upload Certificates &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+          <input type="file" name="cert" id="cert"><br><br>
+          <label for="resume">Upload Resume &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+          <input type="file" name="resume" id="resume"><br><br><br><br><center>
+          <button type="submit" formaction="./succes.html">Complete Registration</button></center>
+
+         
+          
+        </fieldset>
+        
+      
+    </form>
+  </body>
+</html>
